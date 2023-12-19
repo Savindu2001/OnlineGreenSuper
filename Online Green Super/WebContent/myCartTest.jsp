@@ -99,7 +99,7 @@
 
                                 
 
-                                <td><a href="incDecQuantityAction.jsp?id=<%= rs.getString(1) %>&quantity=inc"><i class='bi bi-plus-circle-fill'></i></a> <%= rs.getString(8) %> <a
+                                <td><a href="incDecQuantityAction.jsp?id=<%= rs.getString(1) %>&quantity=inc"><i class='bi bi-plus-circle-fill'></i></a> <%= rs.getString(9) %> <a
                                 href="incDecQuantityAction.jsp?id=<%= rs.getString(1) %>&quantity=dec"><i class='bi bi-dash-circle-fill'></i></a></td>
 
                                 <td class="px-6 py-5 font-medium "><%= rs.getString(10) %> </td>

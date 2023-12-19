@@ -107,7 +107,7 @@
             <div class="flex items-center justify-between flex-grow md:pl-12 py-5">
                 <div class="flex items-center space-x-6 capitalize">
                     <a href="fruits.jsp" class="text-gray-200 hover:text-white transition">Fruits</a>
-                    <a href="vegitables.jsp" class="text-gray-200 hover:text-white transition">Vegitables</a>
+                    <a href="vegitables.jsp" class="text-gray-200 hover:text-white transition">Vegetables</a>
                     <a href="about.jsp" class="text-gray-200 hover:text-white transition">About us</a>
                     <a href="contact.jsp" class="text-gray-200 hover:text-white transition">Contact us</a>
                 </div>
