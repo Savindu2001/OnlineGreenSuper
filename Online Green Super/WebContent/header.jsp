@@ -19,6 +19,13 @@
   
 <header class="bg-white text-gray py-4  top-0 w-full z-50">
 
+<%
+
+String userEmail = (String) session.getAttribute("email");
+boolean loggedIn = userEmail != null;
+
+%>
+
 
   <nav class="flex justify-between items-center w-[92%] mx-auto">
     <div>
@@ -49,12 +56,23 @@
         <li class="md:hidden">
           <a class="hover:text-green-500" href="about.jsp">About Us</a>
         </li>
+        
+        <% if (loggedIn) { %>
         <li class="md:hidden">
           <a class="hover:text-green-500" href="myOrders.jsp"><i class="bi bi-box-fill"></i>My Orders</a>
         </li>
+        
         <li class="md:hidden">
          <a class="hover:text-green-500" href="logout.jsp"><i class="bi bi-box-arrow-right"></i>Logout</a>
         </li>
+        <% } else { %>
+        <li class="md:hidden">
+          <a class="hover:text-green-500" href="login.jsp">Log In</a>
+        </li>
+        <li class="md:hidden">
+          <a class="hover:text-green-500" href="signup.jsp">Sign Up</a>
+        </li>
+        <% } %>
        
       </ul>
     </div>
@@ -68,6 +86,7 @@
         </button></form>
       </div>
       <!-- End of search button with search icon -->
+      <% if (loggedIn) { %>
       <div class="hidden sm:block">
       <ul>
          <li>
@@ -87,6 +106,7 @@
         </li>
       </ul>
     </div>
+    <%} %>
       
     
  
@@ -112,8 +132,10 @@
                     <a href="contact.jsp" class="text-gray-200 hover:text-white transition">Contact us</a>
                 </div>
                 <div class="space-x-3">
+                <% if (!loggedIn) { %>
                 <a href="login.jsp" class="text-gray-200 hover:text-white transition">Login</a>
                 <a href="signup.jsp" class="text-gray-200 hover:text-white transition">Register</a>
+                <% } %>
                 <a  class="text-gray-200 hover:text-white transition"><i class="bi bi-telephone-plus text-lg px-2"></i>076-1794522</a>
                 </div>
             </div>
