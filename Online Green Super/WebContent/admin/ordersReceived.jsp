@@ -31,7 +31,7 @@ if ("cancel".equals(msg)) {
 if ("delivered".equals(msg)) {
 %>
     <script>
-        alert("Successfully Updated!");
+        alert("Order Delivered Successfully Updated!");
     </script>
 <%
 }if ("invalid".equals(msg)) {

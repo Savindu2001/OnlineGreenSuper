@@ -1,6 +1,7 @@
 <%@ page import="com.DB.DBConnect" %>
 <%@ page import="java.sql.*" %>
 
+
 <html>
 <head>
     <title>THANK YOU!</title>
