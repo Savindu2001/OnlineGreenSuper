@@ -80,7 +80,7 @@
 
        
       <input type="submit" value="signup" class="w-full bg-green-500 text-white p-2 rounded-lg mb-6 hover:bg-black hover:text-green-500 black hover:border hover:border-gray-300">
-        
+        </form>
 
       <div class="text-center text-gray-400">
         I have already an account?

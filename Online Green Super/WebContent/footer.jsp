@@ -103,7 +103,7 @@
                 <script>
                     document.write(new Date().getFullYear());
                 </script>
-                Green Supermarket | Contact us: work.savindu@gmail.com | Phone: 076-1794522 | Software Engineer 2 Group Develop by Savindu.S
+                Green Supermarket | Contact us: groupgreensuper@gmail.com | Phone: 076-1794522 | Software Engineer 2 Group A-40 
             </p>
         </div>
 

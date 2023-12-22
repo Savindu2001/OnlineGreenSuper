@@ -19,4 +19,24 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>gmailSender</display-name>
+    <servlet-name>gmailSender</servlet-name>
+    <servlet-class>com.Mail.gmailSender</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>gmailSender</servlet-name>
+    <url-pattern>/gmailSender</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>GmailSenderServlet</display-name>
+    <servlet-name>GmailSenderServlet</servlet-name>
+    <servlet-class>com.Mail.GmailSenderServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GmailSenderServlet</servlet-name>
+    <url-pattern>/GmailSenderServlet</url-pattern>
+  </servlet-mapping>
 </web-app>
